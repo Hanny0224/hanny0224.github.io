@@ -1,5 +1,0 @@
-What I learned in Prac-2
-1. .navbar .sticky /= .navbar.sticky
-2. i.active::before{
-		content: "\f00d";
-	}
