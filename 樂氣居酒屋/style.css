@@ -113,8 +113,10 @@ header ul a{
 .banner{
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-top: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: end;
     max-width: 1400px;
     margin: auto;
 }
@@ -161,7 +163,7 @@ header ul a{
 
 .big-logo img{
 	mix-blend-mode: screen;
-    height: 70vh;
+    height: 60vh;
 }
 
 /* End Banner */
@@ -179,13 +181,13 @@ header ul a{
 
 /* Menu */
 
-.menu, .story, .reservation {
+.menu, .story, .reservation, .footer {
+    max-width: 1400px;
+    margin: auto;
     padding-left: 5rem;
     padding-right: 5rem;
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
-    margin: auto;
 }
 
 .menu img{
@@ -229,6 +231,7 @@ header ul a{
     display: flex;
     justify-content: space-between;
     align-items: start;
+    margin-left: 30px;
 }
 
 .menu p, .story-title p, .reservation-title p, .contact-title p{
@@ -245,9 +248,9 @@ header ul a{
     letter-spacing: 0;
 }
 
-.menu-title .vtc-line{
+/* .menu-title .vtc-line{
     height: 80vh;
-}
+} */
 
 /* End Menu */
 
@@ -260,6 +263,8 @@ header ul a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .hzt-line{
@@ -275,6 +280,8 @@ header ul a{
 .gallery {
     max-width: 1400px;
     margin: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
     column-count: 5;
     column-gap: 10px;
 }
@@ -308,6 +315,7 @@ header ul a{
     flex-direction: row;
     justify-content: flex-start;
 	align-items: start;
+    margin-right: 30px;
 } 
 
 .top-section, .bottom-section{
@@ -359,11 +367,11 @@ p{
 }
 
 .form {
-    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 label {
     color: #fff;
@@ -436,18 +444,12 @@ footer{
     max-height: 480px;
     background-image: url(./img/Footer-BG.png);
     background-size: cover;
-    padding-left: 5rem;
-    padding-right: 5rem;
     padding-top: 120px;
     padding-bottom: 180px;
 }
 
 .footer{
-    max-width: 1400px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: auto;
 }
 
 .white-square{
@@ -479,3 +481,69 @@ footer{
 }
 
 /* End Footer */
+
+@media screen and (min-width:1800px){
+    /* Footer */
+    .white-square{
+        max-width: 1000px;
+    }
+}
+
+
+@media screen and (max-width:1300px){
+    /* reservation */
+    input[type=text], [type=number], [type=datetime-local] {
+        width: 24vw;
+    }
+
+    input[type=submit]{
+        width: 24vw;
+    }
+}
+
+@media screen and (max-width:1200px){
+    /* banner */
+    .big-logo img{
+        height: auto;
+    }
+
+    /* Footer */
+    .white-square{
+        padding: 60px ;
+    }
+
+    footer{
+        padding-bottom: 100px;
+    }
+
+    /* Gallery */
+    .gallery {
+        column-count: 4;
+    }
+}
+
+@media screen and (max-width:900px){
+    /* Gallery */
+    .gallery {
+        column-count: 3;
+    }
+
+    /* Menu */
+    .menu-title .vtc-line{
+        height: 35vh;
+    }
+
+    /* Story */
+    .story .vtc-line{
+          height: 55vh;
+    }
+
+    /* reservation */
+    input[type=text], [type=number], [type=datetime-local] {
+        width: 20vw;
+    }
+    
+    input[type=submit]{
+        width: 20vw;
+    }
+}
