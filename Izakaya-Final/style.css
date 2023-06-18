@@ -399,6 +399,7 @@ input[type=submit]{
     margin-right: 20PX;
     display: inline-block;
     border: 1px solid #fff;
+    background: #fff;
     border-radius: 4px;
     font-size: 16px;
     color: #2C1D01;
