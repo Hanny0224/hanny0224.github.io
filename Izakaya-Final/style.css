@@ -456,10 +456,14 @@ footer{
     padding: 100px ;
 }
 
-.white-square p, .white-square a{
+.white-square p{
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 4px;
+    color: #fff;
+}
+
+.white-square a{
     color: #fff;
 }
 
