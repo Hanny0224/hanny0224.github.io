@@ -430,8 +430,14 @@ nav{
     margin-top: 30px;
 }
 
-.image{
+.L-image{
     max-width: 49%;
+}
+
+@media screen and (min-width:800px){
+    .H-image{
+        max-width: 49%;
+    }
 }
 
 .FinalDesign h3{
@@ -791,6 +797,17 @@ Footer a{
 
     .Schriftarten .FontFormat{
         margin-top: 1rem;
+        width: 100%;
+    }
+
+    .HighF-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .H-image{
         width: 100%;
     }
 
