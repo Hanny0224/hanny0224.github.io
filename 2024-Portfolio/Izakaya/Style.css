@@ -686,6 +686,10 @@ Footer p{
     margin: 10px auto;
 }
 
+Footer a{
+    color: #141731;
+}
+
 /* End Footer */
 
 
