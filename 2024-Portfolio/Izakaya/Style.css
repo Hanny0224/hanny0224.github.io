@@ -337,7 +337,7 @@ nav{
 
 @media screen and (max-width:646px) {
     .OverViewLists{
-        justify-content: space-evenly;
+        justify-content: flex-start;
     }
     
     .Prototype-btn{
