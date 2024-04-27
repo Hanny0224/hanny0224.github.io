@@ -517,15 +517,12 @@ nav{
     object-fit: scale-down;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:965px){
     .popup-img img{
-        height: calc(100vw);
+        width: 90vw;
     }
 }
-
-
 /* End popup-img */
-
 
 
 /* Website-Stylesheet */
