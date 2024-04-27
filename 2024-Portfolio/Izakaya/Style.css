@@ -337,7 +337,7 @@ nav{
 
 @media screen and (max-width:646px) {
     .OverViewLists{
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
     
     .Prototype-btn{
@@ -688,6 +688,7 @@ Footer p{
 
 Footer a{
     color: #141731;
+    text-decoration: none;
 }
 
 /* End Footer */

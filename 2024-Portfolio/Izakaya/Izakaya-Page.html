@@ -40,8 +40,8 @@
     <div class="Banner">
         <div class="BannerContainer">
             <div class="Left-sec">
-                <img src="./Img/Izakaya.png" alt="" class="Banner-img">
-                <img src="./Img/Izakaya-Ipad.png" alt="" class="Banner-img-ipad">
+                <img src="./Img/Izakaya.png" alt="" class="Banner-img image">
+                <img src="./Img/Izakaya-Ipad.png" alt="" class="Banner-img-ipad image">
             </div>
             <div class="Right-sec">
                 <h1>Yue-Chi Izakaya-Restaurant</h1>
@@ -139,8 +139,8 @@
                         Der Besitzer hat seine Markenpräsenz hauptsächlich auf Facebook für die Kundeninteraktion aufgebaut und nutzt das inline.app-Buchungssystem für Reservierungen.
                     </p>
                     <div class="current-pg">
-                        <img src="./Img/Izayaki-FB.png" alt="">
-                        <img src="./Img/Izayaki-inline.png" alt="">
+                        <img class="image" src="./Img/Izayaki-FB.png" alt="">
+                        <img class="image" src="./Img/Izayaki-inline.png" alt="">
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@
                     <h2>SWOT-Analyse</h2>
                 </div>
                 <div class="Paragraphs">
-                    <img src="./Img/SWOT.png" alt="">
+                    <img class="image" src="./Img/SWOT.png" alt="">
                 </div>
             </div>
         </section>
@@ -229,13 +229,13 @@
                 <div class="Paragraphs">
                     <div class="Personas">
                         <div class="PersonaA">
-                            <img src="./Img/PersonaA.png" alt="">
+                            <img class="image" src="./Img/PersonaA.png" alt="">
                             <p>
                                 Diese Persona repräsentiert Nutzer, die keine Präferenz haben, wo sie essen möchten.
                             </p>
                         </div>
                         <div class="PersonaB">
-                            <img src="./Img/PersonaB.png" alt="">
+                            <img class="image" src="./Img/PersonaB.png" alt="">
                             <p>
                                 Diese Persona repräsentiert Nutzer, die mit Yue-Chi Izakaya vertraut sind und direkt eine Reservierung vornehmen möchten.
                             </p>
@@ -262,14 +262,14 @@
                                 Persona: Elice Chiu <br>
                                 Mission: Ein Izakaya-Restaurant zu finden
                             </p>
-                            <img src="./Img/UserJourneyMapA.png" alt="">
+                            <img class="image" src="./Img/UserJourneyMapA.png" alt="">
                         </div>
                         <div class="PersonaB">
                             <p>
                                 Persona: Jone Ryan <br>
                                 Mission: Eine Reservierung im Yue-Chi machen
                             </p>
-                            <img src="./Img/UserJourneyMapB.png" alt="">
+                            <img class="image" src="./Img/UserJourneyMapB.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -319,8 +319,8 @@
                             <h3>Low Fidelity Design</h3>
                             <div class="line"></div>
                         </div>
-                        <img class="LowFD" src="./Img/LowFD.png" alt="">
-                        <img class="LowFD-Phone" src="./Img/LowFD-Phone.png" alt="">
+                        <img class="LowFD image" src="./Img/LowFD.png" alt="">
+                        <img class="LowFD-Phone image" src="./Img/LowFD-Phone.png" alt="">
                     </div>
                     <div class="LowFDesign HighFDesign">
                         <div class="h3title">
@@ -330,19 +330,40 @@
                         </div>
                         <div class="HighFImg">
                             <div class="HighFD">
-                                <img src="./Img/HighFD.png" alt="">
+                                <img class="image" src="./Img/HighFD.png" alt="">
                             </div>
                             <div class="HighFD-Phone">
-                                <img src="./Img/HighFD-Phone.png" alt="">
+                                <img class="image" src="./Img/HighFD-Phone.png" alt="">
                             </div>
                         </div>
                     </div>
-
+                    
                 </div>    
             </div>
         </section>
     </div>
+    <!-- End Designprozesse -->
 
+    <!-- popup img -->
+    <div class="popup-img">
+        <span>&times;</span>
+        <img src="./Img/Taiwan-Tea.png" alt="">
+    </div>
+
+    <script>
+        document.querySelectorAll('.image').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-img').style.display = 'block';
+                document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+        });
+        
+        document.querySelector('.popup-img span').onclick = () =>{
+            document.querySelector('.popup-img').style.display = 'none';
+        };
+
+    </script>
+    
 
 
 <!-- Website-Stylesheet -->
