@@ -40,8 +40,8 @@
     <div class="Banner">
         <div class="BannerContainer">
             <div class="Left-sec">
-                <img src="./Img/InteriorDesignStudio.png" alt="" class="Banner-img">
-                <img src="./Img/InteriorDesignStudio-Ipad.png" alt="" class="Banner-img-ipad">
+                <img src="./Img/InteriorDesignStudio.png" alt="" class="Banner-img image">
+                <img src="./Img/InteriorDesignStudio-Ipad.png" alt="" class="Banner-img-ipad image">
             </div>
             <div class="Right-sec">
                 <h1>Interior Design Studio</h1>
@@ -184,12 +184,7 @@
                             <h3>Low Fidelity Design V1</h3>
                             <div class="line"></div>
                         </div>
-                        <img class="LowFimg" src="./Img/LowFV1.png" alt="">
-                        <!-- <div class="LowFV1-imgs">
-                            <img src="./Img/LowFV1-1.png" alt="">
-                            <img src="./Img/LowFV1-2.png" alt="">
-                            <img src="./Img/LowFV1-3.png" alt="">
-                        </div> -->
+                        <img class="LowFimg image" src="./Img/LowFV1.png" alt="">
                     </div>
 
                     <div class="LowFV2">
@@ -202,21 +197,7 @@
                             Aufgrund des Kundenwunsches nach chinesischer und englischer Sprache auf der Webseite für ihre wichtigen Projekte fiel während der Entwurfsbesprechung auf, dass die Seiten überladen waren, was die Benutzerfreundlichkeit beeinträchtigen könnte. Um dieses Problem anzugehen, überzeugten wir den Kunden, den Text zu reduzieren, indem nur Chinesisch beibehalten und ein Webseitenübersetzer für englische Inhalte verwendet wurde. 
                             Nach erfolgreicher Kommunikation wurden zwei weitere low-fidelity designs erstellt. Dabei wurde die Reihenfolge der Abschnitte angepasst und auf den Kundenwunsch nach Abständen zwischen den Fotos geachtet, um die Nutzererfahrung zu verbessern.
                         </p>
-                        <img class="LowFimg" src="./Img/LowFV2.png" alt="">
-                        <!-- <div class="LowFV2-imgs">
-                            <div class="image">
-                                <p class="LowFV2Title">Startseite V2</p>
-                                <img src="./Img/LowFV2-1.png" alt="">
-                            </div>
-                            <div class="image">
-                                <p class="LowFV2Title">Projektseite V2</p>
-                                <img src="./Img/LowFV2-2.png" alt="">
-                            </div>
-                            <div class="image">
-                                <p class="LowFV2Title">Startseite V3</p>
-                                <img src="./Img/LowFV2-3.png" alt="">
-                            </div>
-                        </div> -->
+                        <img class="LowFimg image" src="./Img/LowFV2.png" alt="">
                     </div>
 
                     <div class="LowFV2">
@@ -225,12 +206,33 @@
                             <h3>High Fidelity Designs</h3>
                             <div class="line"></div>
                         </div>
-                        <img class="LowFimg" src="./Img/HighFD.png" alt="">
+                        <img class="LowFimg image" src="./Img/HighFD.png" alt="">
                     </div>
                 </div>    
             </div>
         </section>
     </div>
+
+    
+    <!-- popup img -->
+    <div class="popup-img">
+        <span>&times;</span>
+        <img src="./Img/Taiwan-Tea.png" alt="">
+    </div>
+
+    <script>
+        document.querySelectorAll('.image').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-img').style.display = 'block';
+                document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+        });
+        
+        document.querySelector('.popup-img span').onclick = () =>{
+            document.querySelector('.popup-img').style.display = 'none';
+        };
+
+    </script>
 
 
 <!-- Website-Stylesheet -->
@@ -360,5 +362,5 @@
             </div>
         </section>
     </div>
-    <p>© 2024 Hanny Lai  UIUX Design Projects | <a href="https://hanny0224.github.io/2024-Portfolio/Impressum/impressum.html">Impressum</a> | <a href="https://hanny0224.github.io/2024-Portfolio/Datenschutz/Datenschutz.html">Datenschutz</a> | <a href="https://hanny0224.github.io/2024-Portfolio/Credit/Credit.html">Credit</a> |</p>
+    <p>© 2024 Hanny Lai  UIUX Design Projects</p>
 </footer>
