@@ -1,0 +1,885 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Ubuntu', 'Noto Sans TC';
+    scroll-behavior: smooth;
+    background-color: #C0D9DD;
+}
+
+/* Font Settings */
+h1{
+    font-family: 'Ubuntu','Noto Sans';
+    color: #052849;
+    font-size: clamp(2rem, 2vw + 1rem, 3rem);
+    font-weight: 400;
+}
+
+h2{
+    font-family: 'Ubuntu','Noto Sans';
+    color: #052849;
+    font-size: clamp(1.2rem, 2vw + 1rem, 1.5rem);
+    font-weight: 400;
+}
+
+h3{
+    font-family: 'Ubuntu','Noto Sans';
+    color: #052849;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Ubuntu','Noto Sans';
+    color: #052849;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+li{
+    font-family: 'Ubuntu','Noto Sans';
+    color: #052849;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-left: 15px;
+}
+
+.Project ul{
+    margin-bottom: 20px;
+}
+/* Font settings End */
+
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    background: linear-gradient(to bottom, #A6CBD0, rgba(192, 217, 221, 0));
+    top: 0; left: 0;
+    z-index: 5000;
+    align-content: center;
+    position: fixed;
+}
+
+.Navcontainer{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    background-image: url('elements/LogoBG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 198px;
+    height: 70px;
+    padding-bottom: 10px;
+}
+
+.navlist{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.brand, .navlist{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column-gap: 10px;
+}
+
+.brand img{
+    max-width: 35px;
+}
+
+.brand a{
+    color: #052849;
+    text-align: left;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.navlist ul{
+    list-style: none;
+    display: flex;
+}
+
+.navlist ul a{
+    color: #fff;
+    letter-spacing: .25px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.navlist li a:hover{
+    color: #052849;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+@media screen and (max-width:1040px) {
+    #navlist{
+        position: fixed;
+        left: 0; top: -50px;
+        width: 100%;
+        height: 0;
+        z-index: 3000;
+        overflow:hidden;
+        background-color: #fff;
+        transition: height 0.8s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;      
+    }
+
+    #navlist.active{
+        height: 100vh;
+        overflow: auto;
+        left: 0; top: 0px;
+    }
+
+    #navlist ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .navlist ul a{
+        color: #052849;
+        font-weight: 300;
+    }
+
+    .navlist li{
+        margin-bottom: 40px;
+    }
+
+    #navlist a:hover{
+        color: #E1B000;
+    }
+
+    #menutoggle{
+        position: fixed;
+        right: 0; top: 0;
+        padding: 1.5em 2em;
+    }
+
+    #menutoggle:before,
+    #menutoggle:after,
+    #menutoggle > div{
+        display: block;
+        content: '';
+        width: 2em;
+        height: 2px;
+        background-color: #0E355B;
+        margin: 6px 0;
+        transition: all 0.5s;
+    }
+
+    .active #menutoggle:before{
+        transform: translateY(8px) rotate(225deg);
+    }
+    .active #menutoggle:after{
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    .active #menutoggle > div{
+        opacity: 0;
+    }
+
+}
+
+/* End Navbar */
+
+/* Banner */
+    /* Banner on PC */
+@media screen and (min-width:900px){
+    .RWDBanner{
+        display: none;
+    }
+
+    .Banner{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 50px;
+    }
+    
+    .BannerContainer{
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Left-sec{
+        width: 60%;
+        margin-top: 100px;
+    }
+    
+    .Right-sec{
+        width: 40%;
+        transform: translate(-20%, 0);
+    }
+    
+    .BannerTitleBG{
+        width: 100%;
+        display: block;
+        transform: translate(-20%, 0);
+    }
+    
+    .Heading{
+        position: absolute;
+        top: 40%;
+        color: white;
+        padding: 0 50px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .DivLine{
+        width: 3px;
+        height: 60px;
+        background-color: #EDB900;
+    }
+    
+    .BannerImg{
+        width: 100%;
+        transform: scale(1.4);
+    }
+}
+
+    /* Banner on Small Screen */
+@media screen and (max-width:899px){
+    .Banner{
+        display: none;
+    }
+
+    .RWDBanner{
+        margin-top: 75px;
+    }
+
+    .BannerContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .Right-sec{
+        height: calc(100vh - 200px);
+    }
+
+    .BannerImg{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .PhoneBannerBG{
+        position: absolute;
+        top: 55%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        background-image: url('elements/BannerTitleBG2.png');
+        background-size: cover;
+        background-position: center;
+        width: 500px;
+        height: 340px;
+        transform: translate(-20%, 20%);
+        padding: 40px;
+    }
+
+    .Heading{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        color: white;
+        padding: 0 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .DivLine{
+        width: 3px;
+        height: 40px;
+        background-color: #EDB900;
+    }
+}
+
+    /* Banner on Phone */
+@media screen and (max-width:640px){
+    .RWDBanner {
+        height: 60vh;
+    }
+    
+    .Left-sec{
+        z-index: 2000;
+    } 
+
+    .PhoneBannerBG{
+        transform: scale(0.8) translate(-35%, 20%);
+        top: 30%;
+    }
+
+    .Heading{
+        top: 25%;
+    }
+}
+
+@media screen and (max-height:700px){
+    .RWDBanner{
+        margin-bottom: 50px;
+    }
+}
+
+/* End Banner */
+
+/* TitleDiv */
+.DivContainer{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.TitleDivline{
+    background-color: #052849;
+    height: 3px;
+    width: 33%;
+}
+
+.TitleName{
+    background-image: url('elements/TitleDivBG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 135px;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width:600px){
+    .DivContainer{
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .TitleDivline{
+        display: none;
+    }
+}
+
+
+/* Abgelaufen & Repetitive */
+.ProjectContainer{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:600px){
+    .ProjectContainer img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.ProjectImg{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ProjectContext{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.ProjectContext img{
+    display: block;
+}
+
+.Description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ProjectName{
+    border-left: solid;
+    border-color: #E1B000;
+    border-width: 3px;
+    padding-left: 10px;
+    margin: 30px 0;
+}
+
+
+/* AutioText */
+.Description audio{
+    margin-top: clamp(40px, 2vw + 20px, 80px);
+}
+
+.Container{
+    max-width: 1280px;
+    padding: 70px 20px 0 20px;
+    margin: auto;
+}
+
+.AudioText{
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.AudioText p{
+    margin-bottom: 10px;
+}
+
+.Heavy{
+    font-weight: 500;
+}
+
+
+/* Pictures */
+.ProjectPics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+.ProjectPics img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* White Div */
+.WhiteDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.WhiteLine{
+    height: 3px;
+    width: 50%;
+    background-color: #fff;
+}
+
+.Dots{
+    width: 10%;
+}
+
+/* Small Screens */
+@media screen and (max-width:800px){
+    .ProjectContainer{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ProjectImg, .ProjectContext{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .ProjectContainer img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .Description audio{
+        margin-top: 80px;
+    }
+    
+    .ProjectPics {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+/* On Phone */
+@media screen and (max-width:600px){
+    .Description audio{
+        margin-top: 40px;
+    }
+
+    .AudioText{
+        column-count: 1;
+    }
+}
+
+@media screen and (max-width:500px){
+    .ProjectContext{
+        margin-top: 40px;
+    }
+
+    .ProjectContext img {
+        background-size: cover;
+    }
+}
+
+/* Art Critique */
+.FlexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CritiquePic{
+    width: 30%;
+}
+
+.CritiquePic img{
+    object-fit: cover;
+    max-height: 90vh;
+}
+
+.CritiqueContext{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 80px;
+    gap: 30px;
+}
+
+.TopSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ArtName{
+    border-left: solid;
+    border-color: #E1B000;
+    border-width: 3px;
+    padding-left: 10px;
+    margin: 30px 0;
+}
+
+.CritiqueText p{
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width:1000px){
+    .CritiqueContext{
+        clip-path: polygon(
+            6% 0%, 100% 0%, 100% 0%, 100% 100%,
+            90% 100%, 6% 100%, 0% 90%, 0% 10%
+        );
+    }
+}
+
+@media screen and (min-width:859px){
+    .CritiqueText img{
+        display: none;
+    }
+    .CritiqueContext{
+        clip-path: polygon(
+            10% 0%, 100% 0%, 100% 0%, 100% 100%,
+            90% 100%, 10% 100%, 0% 90%, 0% 10%
+        );
+    }
+}
+
+@media screen and (max-width:860px){
+    .FlexRow{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CritiquePic{
+        display: none;
+    }
+
+    .CritiqueContext{
+        width: 100%;
+        padding: 60px;
+        gap: 30px;
+        clip-path: polygon(10% 0%, 90% 0%, 100% 5%, 100% 95%, 90% 100%, 10% 100%, 0% 95%, 0% 5%);
+    }
+
+    .CritiqueText img{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:580px){
+    .TopSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .CritiqueContext{
+        width: 100%;
+        padding: 20px;
+        clip-path: polygon(13% 0%, 87% 0%, 100% 3%, 100% 97%, 87% 100%, 14% 100%, 0% 97%, 0% 3%);
+    }
+}
+
+
+/* Souvenir & Partizipative */
+
+.Reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Project2Pics img{
+    width: 100%;
+}
+
+.Flip{
+    transform: scaleX(-1);
+}
+
+.SmallTitle{
+    font-weight: 500;
+}
+
+/* Small Screens */
+@media screen and (max-width:800px){
+    .Reverse{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Course Reflection */
+.LastSec {
+    margin-top: 200px;
+    background-color: #052849;
+}
+
+.LastSec .DivContainer{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.LastSec .TitleDivline{
+    background-color: #fff;
+}
+
+.Reflection{
+    position: relative;
+    /* min-height: 100vh; */
+}
+
+.ReflectionContainer{
+    height: 100vh;
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.RefImg{
+    max-width: 90%;
+    height: auto;
+    display: block;
+}
+
+.AudioBox{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 40%;
+}
+
+.ReflectionBG{
+    width: 100%;
+    display: block;
+    transform: translate(-3%, 0);
+}
+
+.RefAudio{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    padding: 0 20px;
+}
+
+
+.LastSec p{
+    color: #fff;
+}
+
+.LastSec .Container{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+/* 
+@media screen and (min-height:600px){
+    .ReflectionContainer{
+        height: 70vh;
+    }
+}
+
+@media screen and (min-height:850px){
+    .ReflectionContainer{
+        height: 50vh;
+    }
+} */
+
+@media screen and (max-width:900px){
+    .AudioBox{
+        width: 45%;
+        top: 40%;
+    }
+    
+    .ReflectionBG{
+        width: 100%;
+        display: block;
+        transform: translate(-3%, 0);
+    }
+}
+
+@media screen and (max-width:800px){
+    .AudioBox{
+        width: 55%;
+        top: 30%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .ReflectionContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .RefImg{
+        width: 100%;
+        z-index: 2;
+    }
+
+    .AudioBox{
+        width: 80%;
+        top: 25%;
+    }
+
+    .RefAudio{
+        display: flex;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -30%);
+    }
+}
+
+@media screen and (max-width:450px){
+    .ReflectionContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .RefImg{
+        width: 100%;
+        z-index: 2;
+    }
+
+    .AudioBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ReflectionBG{
+        width: 100%;
+        display: block;
+        transform: none;
+    }
+
+    .RefAudio{
+        display: flex;
+        align-items: center;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #052849;
+    border-top: solid;
+    border-color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+footer p{
+    color: #fff;
+}
