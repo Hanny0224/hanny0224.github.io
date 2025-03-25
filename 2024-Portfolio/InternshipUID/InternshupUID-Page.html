@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanny's Portfolio</title>
+    <link rel="stylesheet" href="./Style.css">
+    <script src="./Script.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../General-img/Logo 0E355B.png"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;700&family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap');
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar" id="navbar">
+        <div class="navcontainer">
+            <div class="brand">
+                <a href="https://hannys-portfolio-site.webflow.io/">
+                    <img class="Logo" src="../General-img/Logo 0E355B.png" alt="">
+                    <a href="https://hannys-portfolio-site.webflow.io/">Hanny Lai</a>
+                </a>
+            </div>
+            <nav class="navlist" id="navlist">
+                <div id="menutoggle">
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="https://hanny0224.github.io/2024-Portfolio/InternshipUID/InternshupUID-Page.html">Praktikumsbericht</a></li>
+                    <li><a href="https://hannys-portfolio-site.webflow.io/#UX-Designs">UX Designs</a></li>
+                    <li><a href="https://hannys-portfolio-site.webflow.io/#UI-Designs">UI Designs</a></li>
+                    <li><a href="https://hannys-portfolio-site.webflow.io/#Codings">Codings</a></li>
+                    <li><a href="https://hannys-portfolio-site.webflow.io/about-me">About Me</a></li>
+                    <li><a href="https://hannys-portfolio-site.webflow.io/#Contact">Contact</a></li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1kvvEOZ8PPqSHm_YvTv1StI_GQHE6ClpS/view?usp=sharing" target="_blank" type="button" class="CV-btn">CV HERUNTERLADEN</a>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar Section -->
+
+    <!-- Banner Section -->
+    <div class="Banner">
+        <div class="BannerContainer">
+            <div class="Left-sec">
+                <img src="./Img/InternshipCover.png" alt="" class="Banner-img image">
+                <img src="./Img/InternshipCover-Ipad.png" alt="" class="Banner-img-ipad image">
+            </div>
+            <div class="Right-sec">
+                <h1>Praktikantin bei UID GmbH</h1>
+                <p>UX-Agentur für Innovation, Design & Strategie.</p>
+                <div class="YellowLine"></div>
+                <ul>
+                    <li>23 September 2024 - 14 Februar 2025.</li>
+                    <li>Eigenbewerbung für das Praxissemester.</li>
+                    <li>Entwicklung von Multi-Screen-Designs, Wireframes und Prototypen.</li>
+                    <li>Interdisziplinäre Zusammenarbeit mit unterschiedlichen Teams</li>
+                    <li>Selbstständiges Arbeiten und proaktives Aufgabenmanagement</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('navlist').addEventListener('click', (e)=>{
+            document.getElementById('navlist').classList.toggle('active');
+        })
+
+        var slider = tns({
+            container: '.cards',
+            items:1,
+            gutter:20,
+            slideBy:"page",
+            autoplayButton: false,
+            controlsPosition: 'bottom',
+            navPosition: 'bottom',
+            controlsText: ["&laquo prev", "next &raquo"],
+            responsive:{
+                720:{
+                    items:2,
+                },
+                980:{
+                    items:3,
+                },
+            }
+        }); 
+    </script>
+    <!-- End Banner Section -->
+
+    <!-- Introduction Section -->
+    <div class="YellowLineTitle-1">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Einführung</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        Im Rahmen der Masterstudienanforderungen des Intermedia Design-4 Studiums absolvierte ich ein Praktikum bei UID GmbH als UI/UX-Designer von 23. September 2024 bis 14. Februar 2025.
+                        <span class="black">Das Ziel des Praktikums war es, praktische Erfahrungen im Bereich UI/UX zu sammeln und zu verstehen, wie der Designprozess in einem Unternehmen abläuft.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Unternehmens-
+                        <br>beschreibung</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        UID GmbH, seit 2023 Teil der BAYOONET-Gruppe, ist ein wegweisendes Unternehmen im Bereich User Experience mit 25 Jahren Expertise. Der Hauptsitz befindet sich in Ludwigsburg, weitere Niederlassungen gibt es in Mannheim, Darmstadt und Berlin. Als B2B-Unternehmen spezialisiert sich UID auf Dienstleistungen wie Kommunikationsdesign, Interface- & Screen-Design, Service Design, Universal Design und Webentwicklung. Als Teil des Teams im Bereich User Experience Design konzentrieren wir uns auf die Schaffung intuitiver Benutzererlebnisse und ästhetischer Bildschirmgestaltungen.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Introduction -->
+
+    <div class="ImgDiv">
+        <img src="./Img/ImgDiv.png" alt="">
+    </div>
+
+
+    <!-- BlueDiv -->
+    <div class="YellowLineTitle">
+        <section>
+            <div class="BlueDivContainer">
+                <div class="BlueDiv">
+                    <div class="line"></div>
+                    <div class="threeblocks">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End BlueDiv -->
+
+    <!-- Übernahm Aufgaben -->
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Übernahm Aufgaben</h2>
+                </div>
+                <div class="Paragraphs">
+                    <div class="SubTitle">
+                        <div class="h3title W30per">
+                            <h3>Design-Aufgaben</h3>
+                            <div class="line"></div>
+                        </div>
+                        <ul>
+                            <li>Entwicklung von Multi-Screen-Designs, Wireframes und Prototypen</li>
+                            <li>Definition von Designstilen</li>
+                            <li>Erstellung von Pitches</li>
+                            <li>Entwicklung von Ul/UX-Designs unter Berücksichtigung spezifischer Benutzergruppen und branchenspezifischer Anforderungen</li>
+                            <li>Überprüfung und Optimierung implementierter Screens gemäß Design-Styleguides</li>
+                            <li>Definition visueller Stile und Erstellung von Moodboards</li>
+                            <li>Bildbearbeitung mit Photoshop</li>
+                            <li>Erstellen von Icons</li>
+                            <li>Recherche zu Kl-Tools</li>
+                        </ul>
+                    </div>
+                    <div class="SubTitle">
+                        <div class="h3title W20per">
+                            <h3>User Research</h3>
+                            <div class="line"></div>
+                        </div>
+                        <ul>
+                            <li>Durchführung von User Research & User Interviews.</li>
+                            <li>Dokumentation und Auswertung von User-Testing-Ergebnissen</li>
+                            <li>Durchführung von Wettbewerbsanalysen und Benchmarking.</li>
+                            <li>Erstellung von User Journey Maps</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div class="h3title">
+                            <h3>Organisatorische Leistung</h3>
+                            <div class="line"></div>
+                        </div>
+                        <ul>
+                            <li>Interdisziplinäre Zusammenarbeit mit unterschiedlichen Teams</li>
+                            <li>Selbstständiges Arbeiten und proaktives Aufgabenmanagement</li>
+                            <li>Erstellung von Präsentationen</li>
+                            <li>Erstellung von Miro-Boards für interaktive Workshops</li>
+                            <li>Erstellung von Social-Media-Strategien</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Übernahm Aufgaben -->
+
+    <!-- Praktikumszeugnis -->
+    <div class="Praktikumszeugnis YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Praktikumszeugnis</h2>
+                </div>
+                <div class="Paragraphs">
+                    <div class="TwoCols">
+                        <div class="Cols">
+                            <img class="image" src="./Img/Praktikumszeugnis/Praktikumszeugnis-1.jpg" alt="">
+                        </div>
+                        <div class="Cols">
+                            <img class="image" src="./Img/Praktikumszeugnis/Praktikumszeugnis-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Benutzerempathie -->
+
+
+    <!-- Persönliche Reflexion -->
+    <div class="YellowLineTitle">
+        <div class="DivTitle">
+            <div class="container">
+                <div class="h2title">
+                    <div class="line"></div>
+                    <h2>Persönliche Reflexion</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Angewandte Fähigkeiten</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        Mit den erworbenen Designfähigkeiten arbeitete ich mit bekannten Design-Tools wie Figma und der Adobe Suite sowie agilen Tools wie Miro und Microsoft Office. Ich wendete meine Fähigkeiten an, um nutzerzentrierte Designs zu erstellen, 
+                        <span class="black">indem ich die Bedürfnisse der Nutzer verstand und User Experience Workflows analysierte, um intuitive Screen-Konzepte zu entwickeln.</span>
+                        Anschließend erstellte ich ansprechende Benutzeroberflächen und Prototypen, 
+                        <span class="black">die der Markenidentität des Unternehmens entsprechen.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Wichtige Erkenntnisse</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        Während meines Praktikums bei UID GmbH war ich begeistert, an den Designprozessen tatsächlicher Projekte teilzunehmen, die Details des Screen Designs und die Barrierefreiheit für eine große Bandbreite von Nutzergruppen zu lernen. Anfangs dachte ich, dass alle Designprinzipien und Barrierefreiheitsaspekte eine zentrale Grundlage bilden, der alle Designer folgen müssen. Aber durch die verschiedenen Projekte, an denen ich bei UID beteiligt war, habe ich gelernt, dass diese Standards je nach Projekt stark variieren können. Während einige Regeln für bestimmte Projekte unerlässlich sind, sind andere möglicherweise weniger relevant. Daher spielt die Nutzerforschung eine entscheidende Rolle, bevor der Designprozess fortgesetzt werden kann.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Herausforderung und Überwindung</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        Eines der Projekte, auf das ich besonders stolz bin, ist ein UI-Design für ein Heizsystemunternehmen. <span class="black">Die größte Herausforderung bestand darin, mit ihrem hochkomplexen System zu arbeiten, da wir eine Vielzahl an Funktionen auf einem kleinen Bildschirm von nur 854px × 480px (109mm × 61mm) unterbringen mussten.</span> Um diese Komplexität zu bewältigen, teilte die Projektleiterin das Projekt in zwei Teams auf: Konzeptentwicklung und visuelles Design. Ich hatte das Privileg, im Team für visuelles Design zu arbeiten.
+                    </p>
+                    <p class="LineHight">
+                        Beim Entwerfen eines Konzeptbildschirms und dessen Umsetzung in einen Prototypen wurde mir schnell klar, <span class="black">dass er weder für uns Designerinnen noch für die Benutzer intuitiv genug war, um die Bedienung zu verstehen.</span> Dieser Bildschirm beschäftigte mich intensiv, und ich hatte zahlreiche Meetings mit der Projektleiterin und anderen Designerinnen, um das Konzept und die beabsichtigte Nutzung vollständig zu verstehen.
+                    </p>
+                    <p class="LineHight">
+                        Zunächst sah die Projektleiterin keine Probleme mit dem bestehenden Konzept. Um uns besser abzustimmen, ergriff ich die Initiative und erstellte verschiedene Versionen der Bildschirmdesigns. Ich erklärte, dass ich ihre Überlegungen nachvollziehen konnte und dass die Änderungen in meinen neuen Designs dazu beitragen würden, den Bildschirm intuitiver und benutzerfreundlicher zu gestalten. <span class="black">Die Projektleiterin war zufrieden, und die von mir gestalteten Bildschirme wurden schließlich dem Kunden präsentiert.</span>
+                    </p>
+                    <p class="LineHight">
+                        Ich war sehr stolz auf mich, nicht nur weil ich ein <span class="black">komplexes Problem lösen konnte,</span> sondern auch, weil ich ein Design <span class="black">logisch und kritisch entwickeln konnte.</span> Zudem konnte ich meine Fähigkeit unter Beweis stellen, <span class="black">effektiv und höflich mit der Projektleiterin zu kommunizieren und sie von meinen Designüberlegungen zu überzeugen.</span>
+                    </p>
+                    <img class="space" src="./Img/Img-1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Persönliche Reflexion -->
+
+
+    <!-- Kulturschock -->
+    <div class="YellowLineTitle">
+        <div class="DivTitle">
+            <div class="container">
+                <div class="h2title">
+                    <div class="line"></div>
+                    <h2>Kulturschock</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Work-Life-Balance</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        Als Taiwanese habe ich viele Unterschiede zwischen den deutschen und asiatischen Arbeitsumfeldern festgestellt. Diese Unterschiede finde ich sehr interessant und faszinierend.
+                    </p>
+                    <p class="LineHight">
+                        Das Erste, was mir auffiel, waren die Arbeitszeiten. In Deutschland haben die Mitarbeitenden die Flexibilität, ihre Arbeitszeiten nach ihren individuellen Bedürfnissen anzupassen. In Taiwan hingegen sind die Arbeitszeiten größtenteils festgelegt. Mitarbeitende haben in der Regel entweder einen Vollzeitvertrag mit 40 Stunden pro Woche oder einen Teilzeitvertrag. 32 Stunden pro Woche gelten dort nicht als Vollzeitstelle. Außerdem gibt es bei uns keinen Überstundenabbau, das bedeutet, dass wir an jedem Arbeitstag 8 Stunden im Büro sein müssen. Überstunden müssen vom Vorgesetzten genehmigt werden, und in den meisten Fällen wird eine Arbeitszeit von weniger als einer zusätzlichen Stunde nicht als Überstunden betrachtet und nicht vergütet.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>"Dringende Aufgaben" – Bedeutung</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        Nachdem ich eine Weile im Berufsleben war, fiel mir auf, dass die Definition von „dringenden Aufgaben“ in Deutschland sehr unterschiedlich zu der in Taiwan ist. Ich erinnere mich, dass mir im letzten November ein neues Pitch-Projekt zugeteilt wurde, begleitet von der Aussage, dass es ein großes und dringendes Projekt sei, das wir bis Ende Januar präsentieren müssen. Ich war aufgeregt und erwartete, dass der Zeitplan eng wird, mit Präsentationen neuer Ideen und vielen Meetings in den kommenden Tagen.  
+                    </p>
+                    <p class="LineHight">
+                        Aber die Managerin sagte: „Da es sich um ein dringendes Thema handelt, werden wir unser nächstes Treffen erst am kommenden Dienstag haben“, war ich überrascht und besorgt. Ich konnte nicht verstehen, warum wir eine ganze Woche für die Vorbereitung auf das nächste Meeting brauchen sollten, wenn das Projekt doch als „dringend“ galt. Ganz abgesehen davon, dass es bald Dezember sein würde und viele Kollegen im Urlaub sein würden! Ich hatte erwartet, dass wir jeden Tag ein Meeting haben müssten.
+                    </p>
+                    <p class="LineHight">
+                        Am Ende stellte sich alles jedoch als unproblematisch heraus. Wir haben das Pitch rechtzeitig abgeschlossen, ohne Überstunden zu machen, und das Ergebnis übertraf sogar die Erwartungen des Kunden.
+                    </p>
+                    <p class="LineHight">
+                        Durch diese Erfahrung habe ich gelernt, dass in Deutschland „dringende Aufgaben“ in der Regel solche sind, die nicht aufgeschoben werden können und eine feste Deadline haben. Die Manager schätzen den benötigten Zeitraum, um diese Aufgaben effizient zu bearbeiten, sodass Mitarbeitende nicht zu viele Überstunden leisten müssen und Stress sowie Druck vermieden werden.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Westliche vs. Asiatische Auszeichnungen</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        In einer Forschungsdiskussion mit meinem Manager stellte ich fest, dass Europäer und Asiaten unterschiedliche Ansichten zu Designauszeichnungen haben. Europäer finden lokale Auszeichnungen vertrauenswürdiger, während Asiaten westliche Auszeichnungen wie den iF Award höher schätzen. 
+                    </p>
+                    <p class="LineHight">
+                        Als mein Manager vorschlug, einen Kunden zu einem asiatischen Auszeichnungswettbewerb zu bewegen, um das Produkt in Asien zu vermarkten, erklärte ich ihm, dass dies nicht nötig sei. Es wäre nicht nur zeitaufwendig und kostspielig. Außerdem bevorzugen Asiaten deutsche Auszeichnungen, weil sie diese als vertrauenswürdiger ansehen und sie eher den Marktwert steigern.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Kulturschock -->
+
+
+    <!-- Gesamtevaluation -->
+    <div class="YellowLineTitle">
+        <div class="DivTitle">
+            <div class="container">
+                <div class="h2title">
+                    <div class="line"></div>
+                    <h2>Gesamtevaluation</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="YellowLineTitle">
+        <section class="container">
+            <div class="row-content">
+                <div class="Title">
+                    <div class="YellowLine"></div>
+                    <h2>Arbeitsumfeld</h2>
+                </div>
+                <div class="Paragraphs">
+                    <p>
+                        Während meines Praktikums habe ich nicht nur viel gelernt, sondern auch eine großartige Zeit mit allen verbracht. Ich habe die Zusammenarbeit mit meinen Kolleg:innen und Vorgesetzten wirklich genossen. Sie waren alle freundlich, hilfsbereit und rücksichtsvoll. Wann immer ich um Hilfe bat, wurden die Probleme, mit denen ich konfrontiert war, gelöst.
+                    </p>
+                    <p class="LineHight">
+                        Allerdings ist nicht immer alles perfekt. Während der fünf Monate gab es eine Phase, in der ich keine Aufgaben hatte und nur kleine interne Recherchen durchführen konnte. Ich wandte mich an alle Vorgesetzten und informierte sie, dass ich nicht genug Aufgaben hatte. Zu dieser Zeit hatte ich das Gefühl, meine Fähigkeiten nicht einsetzen und mich nicht beweisen zu können. Ich begann sogar, an meinen Fähigkeiten zu zweifeln und fragte mich, ob niemand mit mir kommunizieren wollte.
+                    </p>
+                    <p class="LineHight">
+                        Als einer meiner Vorgesetzten schließlich merkte, dass ich wirklich keine Aufgaben hatte, entschuldigte er sich sofort und versicherte mir, dass mit meinen Fähigkeiten nichts falsch sei. Das Unternehmen hatte zu diesem Zeitpunkt einfach nicht viele Projekte, und er hatte angenommen, dass ich meine Tage mit anderen Aufgaben füllen würde. Gleichzeitig befand sich UID GmbH in einer Unternehmensumstrukturierung, da das Unternehmen ein Jahr vor meinem Beginn von Bayoonet GmbH übernommen worden war. Dies führte zu einigen Verwirrungen bezüglich der Hierarchie und der Unternehmensstruktur, was gelegentlich zu Missverständnissen führte. 
+                    </p>
+                    <p class="LineHight">
+                        Mit der Zeit haben sich die Dinge verbessert, während ich weiterhin dort gearbeitet habe. Als ich mehr Verantwortung übernahm, erwarb ich das Vertrauen und die Zuverlässigkeit meiner Kollegen und Manager. Ich freue mich, einen zweiten Vertrag erhalten zu haben, der es mir ermöglicht, weiterhin als Werkstudentin im Bereich UI/UX hier zu arbeiten und noch tiefere, breitere praktische Erfahrungen zu sammeln.
+                    </p>
+                    <img class="space" src="./Img/Img-2.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Gesamtevaluation -->
+
+
+    <!-- popup img -->
+    <div class="popup-img">
+        <span>&times;</span>
+        <img src="./Img/Taiwan-Tea.png" alt="">
+    </div>
+
+    <script>
+        document.querySelectorAll('.image').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-img').style.display = 'block';
+                document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+        });
+        
+        document.querySelector('.popup-img span').onclick = () =>{
+            document.querySelector('.popup-img').style.display = 'none';
+        };
+
+    </script>
+
+
+
+</body>
+<footer>
+    <div>
+        <section class="container">
+            <div class="BlueDiv">
+                <div class="line"></div>
+                <div class="threeblocks">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+                <div class="line"></div>
+            </div>
+        </section>
+    </div>
+    <p>© 2024 Hanny Lai  UIUX Design Projects | <a href="https://hanny0224.github.io/2024-Portfolio/Impressum/impressum.html">Impressum</a> | <a href="https://hanny0224.github.io/2024-Portfolio/Datenschutz/Datenschutz.html">Datenschutz</a> | <a href="https://hanny0224.github.io/2024-Portfolio/Credit/Credit.html">Credit</a> |</p>
+</footer>
